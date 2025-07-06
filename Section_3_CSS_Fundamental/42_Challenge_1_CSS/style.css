@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #181818;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin: 1rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #020202;
+  text-align: center;
+}
+
+.carImage {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.price {
+  font-size: 1.3rem;
+  color: #ff5722;
+  text-align: center;
+}
+
+.details {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.shipping {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contact {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.moreDetails {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.moreDetails a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.moreDetails a:hover {
+  color: red;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.productDetails {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listContainer {
+  padding: 1rem 2rem;
+}
+
+.listContainer li {
+  font-size: 1.1rem;
+}
+
+.listContainer li:nth-child(odd) {
+  color: #1072d4;
+}
+
+.btn {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0056b3;
+}
+
+.footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: #d8d8d8;
+  background-color: #444444;
+}

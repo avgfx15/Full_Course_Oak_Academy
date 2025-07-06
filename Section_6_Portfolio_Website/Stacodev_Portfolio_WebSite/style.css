@@ -1,0 +1,851 @@
+/* archivo-black-regular - latin */
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url("./fonts/ArchivoBlack-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DaysOne";
+  src: url("../../fonts/DaysOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("./fonts/SourceCodePro-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Cousine";
+  src: url("./fonts/Cousine-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("./fonts/RobotoMono-VariableFont_wght.ttf");
+}
+
+/* * Common styles for the portfolio website */
+:root {
+  --text-Main-color: #ffffff;
+  --text-primary-color: #292929;
+  --text-secondary-color: #e47004;
+  --bg-Main-color: #000000;
+  --bg-primary-color: beige;
+  --bg-secondary-color: #f5f5f5;
+  --bg-hover-color: #c92626;
+  --text-hover-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+body {
+  background-color: var(--bg-Main-color);
+  color: var(--text-Main-color);
+}
+
+.containerBox {
+  width: 100%;
+  margin: 0.5rem auto;
+  min-height: 100vh;
+  padding: 1rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  color: var(--text-secondary-color);
+}
+
+span:hover {
+  color: var(--text-hover-color);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+/* / Main Container  */
+
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * Navbar Container Styling  */
+
+.navContainer {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+  z-index: 10;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.navBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.companyDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logoBox {
+  width: 100px;
+  height: auto;
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+}
+
+.companyName {
+  width: auto;
+}
+
+.companyTitle {
+  font-family: "ArchivoBlack";
+  font-size: 1.6rem;
+  color: var(--text-secondary-color);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.companyTag {
+  font-family: "DaysOne";
+  font-size: 1rem;
+  color: var(--text-primary-color);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navMenu {
+  width: 600px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navItems {
+  font-family: "Lato";
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navItems a {
+  color: var(--text-secondary-color);
+}
+
+.navItems a:hover {
+  color: var(--text-primary-color);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.searchBox {
+  text-align: center;
+}
+
+.searchInput {
+  padding: 0.5rem;
+  color: var(--text-secondary-color);
+  border-radius: 0.3rem;
+}
+
+.searchButton {
+  padding: 0.5rem;
+  color: var(--text-hover-color);
+  background-color: var(--text-secondary-color);
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.signInBox {
+  padding: 0.5rem;
+}
+
+.signInButton {
+  padding: 0.5rem;
+  color: var(--text-hover-color);
+  background-color: var(--text-secondary-color);
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.signInButton:hover,
+.searchButton:hover {
+  background-color: var(--bg-hover-color);
+  color: var(--text-hover-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.signInText {
+  font-family: "Lato";
+  font-size: 1rem;
+  color: var(--text-Main-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+/* + Header Container Styling  */
+
+.headerContainer,
+.aboutContainer,
+.servicesContainer,
+.projectsContainer,
+.contactContainer {
+  border-bottom: 2px solid var(--text-secondary-color);
+  border-radius: 5rem;
+}
+
+.headerBox {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.headerContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.headerTitle,
+.headerImage {
+  padding: 0.5rem 1rem;
+}
+
+.headerTitle {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.headerWelcomeText {
+  font-size: 1.5rem;
+  font-family: "Lato";
+  color: var(--text-Main-color);
+  font-weight: 600;
+  align-self: flex-start;
+}
+.headerCompanyName {
+  font-size: 3.5rem;
+  font-family: "ArchivoBlack";
+  color: var(--text-secondary-color);
+  font-weight: bolder;
+  text-transform: uppercase;
+  /* align-self: self-end; */
+}
+
+.headerDescription {
+  line-height: 2;
+}
+
+.headerDescription,
+span {
+  font-size: 1.5rem;
+  font-family: "Lato";
+}
+
+.headerImage {
+  width: 50%;
+}
+
+.headerPic {
+  width: 100%;
+  height: auto;
+  background-color: var(--bg-primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 1rem var(--bg-primary-color);
+}
+
+.headerPic {
+  padding: 1rem;
+}
+
+.headerButtonBox {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--text-secondary-color);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  color: var(--text-hover-color);
+  box-shadow: 0 0 0.8rem var(--bg-primary-color);
+}
+
+.btn:hover {
+  background-color: var(--bg-hover-color);
+  box-shadow: none;
+}
+
+.headerButton,
+.downloadButton {
+  font-size: 1.1rem;
+  color: var(--text-Main-color);
+}
+
+/* $ Social Media Icon  */
+
+.socialConnection {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* 
+.socialLink {
+} */
+
+.socialIcon {
+  color: var(--text-Main-color);
+  font-size: 2.2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--text-secondary-color);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.socialIcon:hover {
+  background-color: var(--bg-hover-color);
+  color: var(--text-Main-color);
+  transform: scale(1.1);
+}
+
+/* # About Container Styling  */
+
+.aboutBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.aboutImgBox {
+  padding: 1rem;
+  width: 100%;
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem var(--bg-primary-color);
+  object-fit: cover;
+  object-position: center;
+}
+
+.aboutContent {
+  width: 70%;
+}
+
+.aboutContent,
+.contentAboutUs,
+.contentAboutWhatWeDo,
+.contentAboutApproach,
+.servicesContainer,
+.projectsContainer,
+.contactContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 1rem;
+}
+
+.aboutTitleHeading {
+  font-size: 1.5rem;
+  font-family: "Lato";
+  /* letter-spacing: 0.2rem; */
+  font-weight: 600;
+  align-self: center;
+  padding: 0.7rem;
+  border-top: 0.2rem solid var(--text-secondary-color);
+  border-bottom: 0.2rem solid var(--text-secondary-color);
+  border-radius: 1rem;
+}
+
+.aboutSubTitle {
+  font-size: 1.2rem;
+  font-family: "DaysOne";
+  /* letter-spacing: 0.1rem; */
+  font-weight: 400;
+}
+
+.aboutDescription {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* ~ SERVICES CONTAINER START  */
+
+.titleText {
+  font-size: 1.3rem;
+  color: var(--text-secondary-color);
+  margin: 0.8rem 0;
+}
+
+.serviceTitle {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-family: "Lato";
+  text-align: center;
+  font-weight: 500;
+  padding: 1rem;
+  border-bottom: 2px solid var(--text-secondary-color);
+  border-radius: 2rem;
+}
+
+.serviceTitle span {
+  font-size: 1.8rem;
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.servicesBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.servicesContainer {
+  /* min-height: 100%; */
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.servicesImages {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.serviceImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.5rem var(--text-Main-color);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.serviceImg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem var(--text-Main-color);
+}
+
+.codeIcon {
+  font-size: 1.2rem;
+  color: var(--text-Main-color);
+  margin-right: 0.8rem;
+}
+
+/* @ PROJECTS CONTAINER START */
+
+.projectsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.portfolioTitle {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Lato";
+  font-weight: 600;
+  border-bottom: 2px solid var(--text-secondary-color);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.portfolioDesc {
+  font-size: 1.2rem;
+}
+
+.projectsGallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.projectItem {
+  max-width: 500px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--text-Main-color);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectImg:hover {
+  transform: scale(1.1);
+}
+
+.projectContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), var(--bg-Main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.5s ease-in-out;
+  padding: 1rem;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.projectItem:hover .projectContent {
+  transform: translateY(0);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.projectTitle {
+  font-size: 1.4rem;
+  font-family: "Cousine";
+  color: var(--text-secondary-color);
+}
+
+.projectDesc {
+  font-size: 1rem;
+  max-width: 90%; /* Or any desired width */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projectBtn {
+  background-color: var(--text-secondary-color);
+  color: var(--text-Main-color);
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.linkIcon {
+  font-size: 1.5rem;
+}
+
+/* ^ CONTACT CONTAINER START */
+.contactBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contactTitle {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Lato";
+  font-weight: 600;
+  border-bottom: 2px solid var(--text-secondary-color);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.contactForm {
+  margin: 1rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputLabel {
+  font-size: 1.3rem;
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.inputData {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.formTextArea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.formButton {
+  padding: 1rem;
+  background-color: var(--text-secondary-color);
+  color: var(--text-Main-color);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.formButton:hover {
+  background-color: var(--bg-hover-color);
+  color: var(--text-Main-color);
+}
+
+/* * FOOTER CONTAINER START */
+.footerContainer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--bg-primary-color);
+  color: var(--bg-Main-color);
+  border-radius: 5rem 5rem 0 0;
+  padding: 1rem;
+}
+
+.footerText {
+  font-size: 1.2rem;
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.footerText span {
+  font-weight: 700;
+}
+
+.goToTop {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--text-secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.goToTop:hover {
+  box-shadow: 0 0 1rem var(--text-Main-color);
+}
+
+.arrowSize {
+  color: var(--text-Main-color);
+  font-size: 2rem;
+}
+
+/* % Media Query for Mobile Devices */
+
+@media screen and (max-width: 1200px) {
+  .aboutBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImgBox {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .aboutContent {
+    width: 100%;
+  }
+
+  .aboutImg {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .goToTop {
+    bottom: 10%;
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .containerBox {
+    height: fit-content;
+    padding: 1rem 3%5;
+  }
+  .navBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .companyDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navMenu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerContent {
+    width: 100%;
+  }
+  .headerImage {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navMenu {
+    display: none;
+  }
+
+  .companyDetails {
+    height: 80px;
+  }
+  .searchBox {
+    width: 100%;
+  }
+
+  .signInBox {
+    width: 80%;
+  }
+
+  .headerContent {
+    width: 100%;
+  }
+  .headerImage {
+    width: 100%;
+  }
+
+  .headerCompanyName {
+    font-size: 2.5rem;
+  }
+}

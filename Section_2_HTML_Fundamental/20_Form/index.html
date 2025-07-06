@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <h3>Contact Details</h3>
+      <div>
+        <label for="name">Name : - </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Name"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email : - </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="mobile">Mobile : - </label>
+        <input
+          type="number"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter Mobile"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <h3>Language Details With Checkbox</h3>
+        <div>
+          <input type="checkbox" id="english" name="language" value="English" />
+          <label for="english">English</label>
+        </div>
+        <div>
+          <input type="checkbox" id="hindi" name="language" value="Hindi" />
+          <label for="hindi">Hindi</label>
+        </div>
+        <div>
+          <input type="checkbox" id="marathi" name="language" value="Marathi" />
+          <label for="marathi">Marathi</label>
+        </div>
+      </div>
+      <br />
+      <div>
+        <h3>Gender Details With Radio Button</h3>
+        <div>
+          <input type="radio" id="male" name="gender" value="Male" required />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="Female"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="other" name="gender" value="Other" required />
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <br />
+      <div>
+        <h3>File Attachment</h3>
+        <div>
+          <label for="file">Select File : - </label>
+          <input type="file" id="file" name="file" required />
+        </div>
+      </div>
+      <br />
+      <div>
+        <h3>Select Options</h3>
+        <div>
+          <label for="country">Country : - </label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    <img src="../14_Images/image-2.jpg" alt="" />
+  </body>
+</html>

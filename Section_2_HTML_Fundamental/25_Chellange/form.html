@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution Page</title>
+  </head>
+  <body>
+    <div>
+      <h1>Form Page</h1>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <br />
+          <p>
+            Please fill out the form below with your personal information.
+            Fields marked with an asterisk (*) are required.
+          </p>
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="mobile">Mobile:</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              required
+              placeholder="Enter Your Mobile Number"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="1"
+              max="120"
+              required
+              placeholder="25"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+          <br />
+          <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+              <option value="" selected disabled>Select Your Country</option>
+              <option value="Canada">India</option>
+              <option value="USA">USA</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="about">About:</label>
+            <br />
+            <textarea
+              name="about"
+              id="about"
+              placeholder="Tell us about yourself"
+              cols="50"
+              rows="6"
+            ></textarea>
+          </div>
+          <br />
+          <button>Submit</button>
+        </fieldset>
+      </form>
+
+      <div class="">
+        <a href="index.html">Go to Home</a>
+        <br />
+        <a href="challenge.html">Go to Challenge</a>
+      </div>
+    </div>
+  </body>
+</html>

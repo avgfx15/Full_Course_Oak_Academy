@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: beige;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgb(255, 230, 198);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.heading {
+  color: darkblue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.imageBox {
+  width: 30rem;
+  margin: 1rem auto;
+  border: 1px solid darkblue;
+  border-radius: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.5rem;
+  color: darkgreen;
+  margin-top: 0.5rem;
+}
+
+.colorBox {
+  margin: 1rem auto;
+}
+.color {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.blue {
+  background-color: blue;
+  box-shadow: 5px 3px 1px 1px rgba(0, 137, 179, 0.5) inset;
+}
+
+.red {
+  background-color: red;
+  box-shadow: 3px 5px 1px 1px rgba(179, 0, 0, 0.5) inset;
+}
+.green {
+  background-color: green;
+  box-shadow: 5px 5px 1px 1px rgba(0, 179, 0, 0.5) inset;
+}
+.orange {
+  background-color: orange;
+  box-shadow: 1px 5px 1px 1px rgba(179, 89, 0, 0.5) inset;
+}
+
+.blue:hover,
+.red:hover,
+.green:hover,
+.orange:hover {
+  transform: scale(0.5.0.5);
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.listBox {
+  margin: 1rem 2rem;
+  background-color: bisque;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.listItems {
+  list-style-type: none;
+  margin: 1rem;
+  border: 1px solid darkblue;
+  padding: 1rem 0.5rem;
+  display: inline-block;
+}
+
+.software {
+}
+
+.compiler {
+  position: absolute;
+  left: 2rem;
+}
+
+.listItem {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.section {
+  height: 10rem;
+  background-color: lightgray;
+}
+
+.sectionContent {
+  text-align: center;
+  line-height: 10rem;
+}
+
+.goToTop {
+  position: fixed;
+  bottom: 10rem;
+  right: 10rem;
+  background-color: darkblue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 8px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.goToTopLink {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.goToTop:hover {
+  background-color: darkcyan;
+  cursor: pointer;
+  box-shadow: 5px 8px 1px 1px rgba(3, 99, 112, 0.5);
+}

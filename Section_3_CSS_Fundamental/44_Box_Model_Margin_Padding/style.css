@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #131313;
+}
+
+.navItem {
+  display: inline-block;
+  background-color: rgb(107, 107, 107);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid rgb(27, 84, 168);
+}

@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(/fonts/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url(/fonts/ArchivoBlack-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DaysOne";
+  src: url(/fonts/DaysOne-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #000000;
+}
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* background-color: #1d1d1d; */
+}
+
+.mainContainer {
+  width: 100%;
+  /* height: 900px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #763879;
+  /* background-color: aqua; */
+}
+
+.navbarContainer {
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  /* border-bottom: 1px solid black; */
+  /* background-color: rgb(238, 238, 238); */
+}
+
+.navBox {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding: 1rem;
+  /* grid-template-columns: 1.5fr 1.5fr 2fr 1fr;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1fr;
+  place-items: center;
+  gap: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.companyName {
+  width: 500px;
+  padding: 0 1rem;
+  /* border: 1px solid #0fbb2c; */
+}
+
+.cName {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  /* color: #f0f0f0; */
+  color: #004c78;
+}
+
+.tagLine {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "DaysOne", sans-serif;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  /* color: #004c78; */
+}
+
+.navMenu {
+  display: block;
+  width: 550px;
+  padding: 1rem 0;
+  /* border: 1px solid #0fbb2c; */
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* flex-wrap: wrap; */
+}
+
+.navItem {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  /* color: #004c78; */
+}
+
+.hemburgerIcon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  /* background-color: #a3bcca; */
+  text-align: center;
+  cursor: pointer;
+}
+
+.hemburgerIcon span {
+  font-size: 1.4rem;
+  color: #f0f0f0;
+  /* color: #004c78; */
+  font-weight: bolder;
+}
+
+.carouselContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/banner-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  /* background-color: bisque; */
+  /* border: 2px solid #a10955; */
+}
+
+.carouselBox {
+  width: 100%;
+  height: 100%;
+  margin: 3rem auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carouselContent {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1.5rem;
+}
+
+.carouselText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 4.2rem;
+  color: #f0f0f0;
+}
+
+.carouselTag {
+  font-family: "Roboto", sans-serif;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+}
+
+.carouselButton {
+  width: 8rem;
+  background-color: #004c78;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.carouselImage {
+  width: 30%;
+  height: auto;
+  display: block;
+}
+
+.carouselImage img {
+  width: 100%;
+  height: auto;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.siteContainer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #2640d1; */
+}
+
+.headerContainer {
+  width: 80%;
+  margin: 2rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerSection {
+  width: 60%;
+}
+
+.headerTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #004c78;
+}
+
+.headerSubtitle {
+  font-size: 1rem;
+  color: #575757;
+  margin-top: 0.5rem;
+  line-height: 2rem;
+}
+
+.headerSectionImage {
+  width: 40%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.headerSectionImage img {
+  width: 100%;
+  height: auto;
+}
+
+.accordionsSection {
+  width: 70%;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  background-color: #9c9c9c;
+}
+
+.footerContent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerLeft {
+  width: 40%;
+  padding: 1rem;
+}
+
+.footerMid {
+  width: 40%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerMid p {
+  display: block;
+}
+
+.footerRight {
+  width: 20%;
+}
+
+@media screen and (max-width: 1480px) {
+  .carouselText {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carouselText {
+    font-size: 1.8rem;
+  }
+
+  .carouselTag {
+    font-size: 1rem;
+  }
+
+  .carouselBox {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .carouselContent {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .carouselButton {
+    margin: 0 auto;
+  }
+
+  .carouselImage {
+    width: 50%;
+    height: auto;
+  }
+
+  .headerSectionImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .hemburgerIcon {
+    display: block;
+  }
+
+  .companyName {
+    display: none;
+  }
+
+  .navMenu {
+    display: none;
+  }
+}

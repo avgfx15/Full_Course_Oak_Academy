@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.newPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  align-items: center;
+}
+
+.sticky-header {
+  margin: 1rem 0;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.7rem;
+  line-height: 1.25;
+}
+
+/* footer style  */
+.footer {
+  background-color: #0fd7f1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}

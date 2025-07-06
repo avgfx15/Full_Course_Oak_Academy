@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd012;
+}
+
+.navItems {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo {
+  width: 110px;
+}
+
+.companyName {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #004c78;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.companyTagline {
+  font-size: 0.95rem;
+  color: #004c78;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+}
+
+.navItem a {
+  margin: 0 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  color: #0581d1;
+}
+
+.navItem a:hover {
+  color: #000;
+  background-color: #fff;
+}
