@@ -1,3 +1,5 @@
+// ~ JAVASCRIPT FUNCTIONS ~ //
+
 // + SUM OF TWO NUMBERS
 
 const sumFunction = function (a, b) {
@@ -29,3 +31,46 @@ const oddEvenFunction = function (num) {
 const oddEven = oddEvenFunction(11);
 
 console.log("Number is: ", oddEven);
+
+// ~ JAVASCRIPT ARRAYS ~ //
+
+const fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+console.log(fruits);
+
+console.log((firstFruit = fruits[0]));
+
+console.log((secondFruit = fruits[1]));
+
+// + add a new fruit to the array at the end using push method
+fruits.push("Fig");
+
+console.log(fruits);
+
+// - remove the last fruit from the array using pop method
+fruits.pop();
+
+console.log(fruits);
+
+// + add a new fruit to the array at the beginning using unshift method
+fruits.unshift("Grapes");
+
+console.log(fruits);
+
+// - remove the first fruit from the array using shift method
+fruits.shift();
+
+console.log(fruits);
+
+// + find the index of a specific fruit using indexOf method
+const indexOfCherry = fruits.indexOf("Cherry");
+
+console.log(indexOfCherry);
+
+// - check if a specific fruit exists in the array using includes method
+const hasBanana = fruits.includes("Banana");
+console.log(hasBanana);
+
+// * seperate the array elements using slice method
+const favoriteFruits = fruits.slice(1, 3);
+console.log(favoriteFruits);
