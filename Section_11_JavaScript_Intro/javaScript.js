@@ -74,3 +74,44 @@ console.log(hasBanana);
 // * seperate the array elements using slice method
 const favoriteFruits = fruits.slice(1, 3);
 console.log(favoriteFruits);
+
+// @ ARRAY ITERATION METHODS
+
+const allFruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+console.log(allFruits);
+
+// ITERATION WITH FOR
+
+console.log("ITERATION WITH FOR LOOP");
+for (let i = 0; i < allFruits.length; i++) {
+  const fruit = allFruits[i];
+  console.log(fruit);
+}
+
+// ITERATION WITH FOREACH
+
+console.log("ITERATION WITH FOREACH LOOP");
+
+allFruits.forEach((fruit) => {
+  console.log(fruit);
+});
+
+// CREATE ARRAY OF NUMBER O TO 20 USING LOOP
+
+console.log("CREATE ARRAY OF NUMBER O TO 20 USING LOOP");
+const numbers = [];
+for (let i = 0; i <= 20; i++) {
+  numbers.push(i);
+}
+console.log(numbers);
+
+console.log("GET NUMBERS FROM numbers DIVISIBLE BY 5 USING FOREACH");
+
+// GET NUMBERS FROM numbers DIVISIBLE BY 5 USING FOREACH
+const divisibleByFive = [];
+numbers.forEach((number) => {
+  if (number % 5 === 0) {
+    divisibleByFive.push(number);
+  }
+});
+console.log(divisibleByFive);
