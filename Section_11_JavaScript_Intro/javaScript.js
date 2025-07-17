@@ -115,3 +115,65 @@ numbers.forEach((number) => {
   }
 });
 console.log(divisibleByFive);
+
+// $ JAVASCRIPT OBJECT
+
+const person = {
+  name: "John Doe",
+  age: 30,
+  city: "New York",
+};
+
+console.log(person);
+console.log("Name: ", person.name);
+console.log("Age: ", person.age);
+
+const blogPost = {
+  title: "Understanding JavaScript Objects",
+  author: "John Doe",
+  date: "2020-01-01",
+  content: "This is a blog post about JavaScript objects.",
+  tags: ["JavaScript", "Programming", "Web Development"],
+  comments: [
+    {
+      author: "Jane Smith",
+    },
+    {
+      author: "Bob Johnson",
+    },
+  ],
+  getSummary: function () {
+    return `${this.title} by ${this.author}`;
+  },
+  likes: [
+    {
+      user: "Alice",
+      date: "2020-01-02",
+    },
+    {
+      user: "Bob",
+      date: "2020-01-03",
+    },
+  ],
+};
+
+console.log(blogPost);
+console.log("Blog Post Title: ", blogPost.title);
+console.log("Author: ", blogPost.author);
+console.log("Date: ", blogPost.date);
+console.log("Content: ", blogPost.content);
+console.log("Tags: ", blogPost.tags);
+console.log("Comments: ", blogPost.comments);
+console.log("First Comment Author: ", blogPost.comments[0].author);
+console.log("Second Comment Author: ", blogPost.comments[1].author);
+console.log("Blog Post Summary: ", blogPost.getSummary());
+
+blogPost.tags.forEach((tag) => {
+  console.log("Tag: ", tag);
+});
+
+blogPost.likes.forEach((like) => {
+  console.log("Liked by: ", like.user, " on ", like.date);
+});
+
+// @ JAVASCRIPT FUNCTIONS WITH OBJECTS
