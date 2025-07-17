@@ -177,3 +177,27 @@ blogPost.likes.forEach((like) => {
 });
 
 // @ JAVASCRIPT FUNCTIONS WITH OBJECTS
+const car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2020,
+  start: function () {
+    console.log(`${this.make} ${this.model} is starting.`);
+  },
+  stop: function () {
+    console.log(`${this.make} ${this.model} is stopping.`);
+  },
+};
+
+console.log("Car Make: ", car.make);
+console.log("Car Model: ", car.model);
+console.log("Car Year: ", car.year);
+car.start();
+car.stop();
+
+// - ADDING A NEW METHOD TO THE OBJECT
+car.honk = function () {
+  console.log(`${this.make} ${this.model} is honking.`);
+};
+
+car.honk();
