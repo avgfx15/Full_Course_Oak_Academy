@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+#myButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: auto;
+  overflow: auto;
+  background-color: rgb(148, 245, 245);
+  padding: 20px;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modalHeading {
+  text-align: center;
+  font-size: 2em;
+  color: #222222;
+  margin: 1rem 0;
+  font-weight: bold;
+  border-bottom: 3px solid #ad0d0d;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0 1rem;
+}
+
+#divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ad0d0d;
+  margin: 1rem 0;
+}
+
+.modalContent {
+  /* background-color: #4e4e4e; */
+  width: 100%;
+  height: 60%;
+  padding: 1rem;
+  text-align: start;
+}
+
+.modelHeader {
+  text-align: center;
+  color: #080808;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#closeBtn {
+  background-color: #b11702;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+/* Basic styling for the modal container */
+#message {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* When the 'show' class is added, display the modal */
+#message.show {
+  display: block;
+}
+
+/* Add an animation for the modal appearance (optional) */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#divider {
+  border-bottom: 1px solid #eee;
+  margin: 10px 0;
+}
+
+.modalHeading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modelHeader {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #00b0e6;
+  padding: 10px;
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.navItem {
+  margin: 0 15px;
+}
+
+.navItem a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: #0befff;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.toDoHeader {
+  margin: 1rem;
+}
+
+.toDoList {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #222222;
+}
+
+.toDoItem {
+  margin: 1rem;
+  text-align: start;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  list-style: none;
+}
